@@ -78,38 +78,7 @@
 		    <artifactId>spring-security-config</artifactId>
 		    <version>5.7.3</version>
 		</dependency>
-		
-		<!-- 4. 파일 업로드 관련 두개의 라이브러리 -->
-		<dependency>
-		    <groupId>commons-fileupload</groupId>
-		    <artifactId>commons-fileupload</artifactId>
-		    <version>1.4</version>
-		</dependency>
-				
-		<dependency>
-		    <groupId>commons-io</groupId>
-		    <artifactId>commons-io</artifactId>
-		    <version>2.11.0</version>
-		</dependency>
-		
-		<!-- 5. Ajax 관련 두개의 라이브러리 -->
-		<dependency>
-		    <groupId>com.googlecode.json-simple</groupId>
-		    <artifactId>json-simple</artifactId>
-		    <version>1.1.1</version>
-		</dependency>
-		
-		<dependency>
-		    <groupId>com.google.code.gson</groupId>
-		    <artifactId>gson</artifactId>
-		    <version>2.10</version>
-		</dependency>
-	    
-	    <dependency>
-		    <groupId>com.fasterxml.jackson.core</groupId>
-		    <artifactId>jackson-databind</artifactId>
-		    <version>2.12.1</version>
-		</dependency>
+
 		
 		<!-- Spring -->
 		<dependency>

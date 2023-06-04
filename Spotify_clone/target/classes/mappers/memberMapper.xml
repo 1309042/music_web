@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="memberMapper">
+
+	<resultMap id="memberResultSet" type="com.hyunseo.spotify.member.model.vo.Member">
+		<result column="MEMBER_NO" property="memberNo" />
+		<result column="MEMBER_ID" property="memberId" />
+		<result column="MEMBER_PWD" property="memberPwd" />
+		<result column="MEMBER_NAME" property="memberName" />
+		<result column="EMAIL" property="email" />
+		<result column="PHONE" property="phone" />
+		<result column="memberEnrollDate" property="memberEnrollDate" />
+		<result column="MEMBER_STATUS" property="memberStaus" />
+		<result column="FAVORITE_GENRE" property="favoriteGenre" />
+		<result column="FAVORITE_ARTIST" property="favoriteArtist" />
+	</resultMap>
+	
+	<!-- 회원가입용 쿼리문 -->
+	<insert id="insertMember" parameterType="com.hyunseo.spotify.member.model.vo.Member">
+		INSERT INTO MEMBER (MEMBER_NO
+						  , MEMBER_ID
+						  , MEMBER_PWD
+						  , MEMBER_NAME
+						  , PHONE
+						  , EMAIL)
+					VALUES (SEQ_MEMBER_NO.NEXTVAL
+						  , #{memberId}
+						  , #{memberPwd}
+						  , #{memberName}
+						  , #{phone}
+						  , #{email})
+	</insert>
+	
+</mapper>
